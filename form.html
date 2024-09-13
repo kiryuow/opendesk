@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="枚方で新しくオープンした事業主が実際にいる家型のワークスペースです。1人ではやる気が出ない/すぐに質問したい/スマホばかり見て集中できないという方におすすめです！老若男女問わずご利用いただけます。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ</title>
+  <link rel="opendesk-icon" sizes="180x180" href="file:///D:/MyHP/img/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E7%94%BB%E5%83%8F.webp">
+  <link rel="icon" type="image/x-icon" href="file:///D:/MyHP/img/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E7%94%BB%E5%83%8F.webp">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="form.css">
+  <script>
+    function validateForm() {
+        var name = document.forms["contactForm"]["name"].value;
+        var email = document.forms["contactForm"]["email"].value;
+        var phone = document.forms["contactForm"]["phone"].value;
+        var message = document.forms["contactForm"]["message"].value;
+        var errorMessage = "";
+
+        if (name == "") {
+            errorMessage += "名前を入力してください。\n";
+        }
+        if (email == "") {
+            errorMessage += "メールアドレスを入力してください。\n";
+        }
+        if (phone == "") {
+            errorMessage += "電話番号を入力してください。\n";
+        }
+        if (message == "") {
+            errorMessage += "お問い合わせ内容を入力してください。\n";
+        }
+        if (errorMessage != "") {
+            alert(errorMessage);
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="left-text">2024.09.13</p>
+      <div class="header-icon">
+        <a href="file:///D:/MyHP/HP/main.html">
+          <img src="file:///C:/Users/inuif/Downloads/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%87%E3%82%B9%E3%82%AF%E3%80%80%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.webp" width="200px" height="70px" alt="オープンデスクのアイコン" loading="lazy">
+        </a>
+      </div>
+      <p class="right-text">少人数ワークスペース</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <div class="btn-wrapper">
+        <a class="btn" href="file:///D:/MyHP/HP/main.html">ホーム</a>
+        <a class="btn" href="file:///D:/MyHP/HP/method.html">利用方法</a>
+        <a class="btn" href="file:///D:/MyHP/HP/room.html">設備環境</a>
+        <a class="btn" href="file:///D:/MyHP/HP/price.html">料金</a>
+        <a class="btn" href="file:///D:/MyHP/HP/map.html">場所</a>
+        <a class="btn" href="file:///D:/MyHP/HP/form.html">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="file:///D:/MyHP/HP/main.html">ホーム</a>
+    <a href="file:///D:/MyHP/HP/form.html">お問い合わせ</a>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="contact">
+        <h1 class="heading">お問い合わせ</h1>
+        <form name="contactForm" action="form.php" method="POST" onsubmit="return validateForm();">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name">
+  
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email">
+  
+            <label for="phone">電話番号:</label>
+            <input type="tel" id="phone" name="phone">
+  
+            <label for="message">お問い合わせ内容:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+  
+            <input type="submit" value="送信">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <img src="file:///C:/Users/inuif/Downloads/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%87%E3%82%B9%E3%82%AF%E3%80%80%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.webp" width="150px" height="70px" alt="オープンデスクのアイコン" loading="lazy">
+      <div class="footer-right">
+        <p>〒573-0013<br>大阪府立枚方市星が丘1-24-5<br>第3星丘マンション405<br>090-1242-7546</p>
+      </div>
+  </footer>
+</body>
