@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.timetree-top {
+  margin-top: 30px;
+}
+
+.timetree-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.timetree-icon {
+  width: 50%;
+  text-align: center;
+}
+
+.timetree-icon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+aside {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.timetree-wrapper aside a {
+  text-decoration: underline;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.timetree-wrapper aside a:hover {
+  color: #004999;
+}
+
+.timetree-bottom {
+  margin-top: 50px;
+}
+
+.timetree-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.timetree-ex {
+  width: 20%;
+  text-align: center;
+}
+
+.timetree-ex img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+picture {
+  width: 5%;
+  text-align: center;
+}
+
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 注意事項セクション */
+.notice {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.notice h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.notice ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notice ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* メディアクエリ（1000px以下） */
+@media (max-width: 1000px) {
+  .timetree-wrapper, aside, .timetree-icon {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    padding-left: 0;
+  }
+
+  aside p {
+    margin-top: 8px;
+  }
+
+  .timetree-order {
+    flex-direction: column;
+  }
+
+  .timetree-ex, .arrow {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .timetree-ex img {
+    width: 50%;
+    height: auto;
+  }
+
+  picture img {
+    width: 100%;
+  }
+}
+
+/* メディアクエリ（670px以下） */
+@media (max-width: 670px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .notice h1 {
+    font-size: 20px;
+  }
+
+  .notice ul li {
+    font-size: 12px;
+  }
+}
