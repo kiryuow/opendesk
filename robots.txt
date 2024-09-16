@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kiryuow.github.io/opendesk/sitemap.xml
