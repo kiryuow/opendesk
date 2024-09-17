@@ -14,7 +14,7 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.map-top aside {
+.map-top address {
   font-size: 14px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -78,7 +78,7 @@
     width: 40%;
   }
 
-  .map-top aside {
+  .map-top address {
     margin-top: 20px;
     font-size: 12px;
   }
@@ -90,7 +90,7 @@
     font-size: 20px;
   }
 
-  .map-top aside {
+  .map-top address {
     font-size: 12px;
   }
 
